@@ -101,6 +101,14 @@
 
 <hr />
 
+
+<div class="flourish-embed" data-src="story/720615"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+
+<hr />
+
 <p>Fonte: <a href="https://vacinaja.sp.gov.br/" target="_blank">https://vacinaja.sp.gov.br/</a></p> 
+
+<hr />
 
 
