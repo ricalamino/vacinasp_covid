@@ -96,3 +96,8 @@
 
 <p>Faltam <strong>{dias}</strong> dias para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
 
+<hr />
+
+<p>Fonte: <a href="https://vacinaja.sp.gov.br/" target="_blank">https://vacinaja.sp.gov.br/</a></p> 
+
+
