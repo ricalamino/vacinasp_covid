@@ -1,7 +1,5 @@
 <script>
 
-	let dias = 0;
-
 	let idades = [
 		{ id:1, idade: 59, ano: 2021, mes:7, dia:1},
 		{ id:2, idade: 58, ano: 2021, mes:7, dia:1},
@@ -51,26 +49,23 @@
 
 	let selected;
 
-	let hoje = new Date();
+	const hoje = new Date();
 
 	let idade_selected = idades.find(obj => obj.id == 1);
-
 	let data_vacina = new Date(idade_selected.ano, idade_selected.mes-1, idade_selected.dia);  
+	let dias = parseInt((data_vacina-hoje)/(24*3600*1000));
 
-	dias = parseInt((data_vacina-hoje)/(24*3600*1000));
-
-	
+	let meses_calculado = 0;
+	let dias_calculado = 0;
 
 	function handleSubmit() {
 
-
 		idade_selected = idades.find(obj => obj.id == selected);
-
-		let data_vacina = new Date(idade_selected.ano, idade_selected.mes-1, idade_selected.dia);  
-
+		data_vacina = new Date(idade_selected.ano, idade_selected.mes-1, idade_selected.dia);  
 		dias = parseInt((data_vacina-hoje)/(24*3600*1000));
 
-
+		meses_calculado = parseInt(dias/30);
+		dias_calculado = parseInt(dias%30);
 	}
 
 
@@ -79,7 +74,6 @@
 <h1>Vacinação no Estado de São Paulo</h1>
 
 <p>Quantos anos você tem?
-
 
 <select bind:value={selected} on:change={handleSubmit}>
 	{#each idades as idade}
@@ -91,10 +85,19 @@
 
 </p>
 
+<p>Você será vacinado a partir do dia <strong>{idade_selected.dia< 10 ? '0'+idade_selected.dia: idade_selected.dia}/{idade_selected.mes < 10 ? '0'+idade_selected.mes: idade_selected.mes}/{idade_selected.ano}</strong>.</p>
+<p>Faltam <strong>{dias}</strong> dias 
+	{#if meses_calculado > 0} 
+		( <strong>{meses_calculado} meses
+		{#if dias_calculado > 0}
+		e {dias_calculado} dias
+		{/if}
+		</strong>)
+	{/if}
 
-<p>Você será vacinado a partir do dia {idade_selected.dia}/{idade_selected.mes}/{idade_selected.ano}.</p>
+	
+	para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
 
-<p>Faltam <strong>{dias}</strong> dias para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
 
 <hr />
 
