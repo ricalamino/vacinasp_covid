@@ -71,6 +71,11 @@
 
 </script>
 
+<svelte:head>
+	<title>Quando vou ser vacinado em São Paulo?</title>
+	
+</svelte:head>
+
 <h1>Vacinação no Estado de São Paulo</h1>
 
 <p>Quantos anos você tem?
