@@ -45,7 +45,7 @@
 		{ id:42, idade: 18, ano: 2021, mes:10, dia:11}	
 	];
 
-	let selected;
+	let selected = 1;
 	
 	const hoje = new Date();
 
@@ -53,9 +53,9 @@
 									.filter(obj => hoje <= new Date(obj.ano, obj.mes-1, obj.dia+1))
 									.sort((a, b) => parseFloat(a.id) - parseFloat(b.id));
 
-	let idade_selected ;
-	let data_vacina ;  
-	let dias ;
+	let idade_selected = idades.find(obj => obj.id == selected);
+	let	data_vacina = new Date(idade_selected.ano, idade_selected.mes-1, idade_selected.dia);  
+	let	dias = parseInt((data_vacina-hoje)/(24*3600*1000));
 
 	let meses_calculado = 0;
 	let dias_calculado = 0;
@@ -96,7 +96,7 @@
 		</div>
 	</div>
 	
-	{#if selected>0} 
+	
 		<div class="alert alert-success mt-3" role="alert">
 			<p class="fs-3">Você será vacinado a partir do dia <strong>{idade_selected.dia< 10 ? '0'+idade_selected.dia: idade_selected.dia}/{idade_selected.mes < 10 ? '0'+idade_selected.mes: idade_selected.mes}/{idade_selected.ano}</strong>.</p>
 			<p class="mb-0 fs-5">Faltam <strong>{dias} dias</strong> 
@@ -109,7 +109,7 @@
 				{/if}
 			para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
 		</div>
-	{/if}
+	
 
 	<hr />
 
