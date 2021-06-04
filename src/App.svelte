@@ -83,7 +83,7 @@
 			<div class="row mt-3">
 				<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 				<div class="col-sm-6">
-					<select bind:value={selected} on:change={handleSubmit} id="colFormLabelLg" class="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
+					<select bind:value={selected} on:change={handleSubmit} on:blur={handleSubmit} id="colFormLabelLg" class="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
 						<option selected id="0" value="0" disabled>Sua idade</option>
 						{#each idades as idade}
 							<option id={idade.id} value={idade.id}>
