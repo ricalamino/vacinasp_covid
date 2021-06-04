@@ -1,6 +1,6 @@
 <script>
 
-	let idades = [
+	const idades_full = [
 		{ id:1, idade: 59, ano: 2021, mes:7, dia:1},
 		{ id:2, idade: 58, ano: 2021, mes:7, dia:1},
 		{ id:3, idade: 57, ano: 2021, mes:7, dia:1},
@@ -42,24 +42,25 @@
 		{ id:39, idade: 21, ano: 2021, mes:10, dia:11},
 		{ id:40, idade: 20, ano: 2021, mes:10, dia:11},
 		{ id:41, idade: 19, ano: 2021, mes:10, dia:11},
-		{ id:42, idade: 18, ano: 2021, mes:10, dia:11}
-
-
+		{ id:42, idade: 18, ano: 2021, mes:10, dia:11}	
 	];
 
 	let selected;
-
+	
 	const hoje = new Date();
 
-	let idade_selected = idades.find(obj => obj.id == 1);
-	let data_vacina = new Date(idade_selected.ano, idade_selected.mes-1, idade_selected.dia);  
-	let dias = parseInt((data_vacina-hoje)/(24*3600*1000));
+	const idades = idades_full
+									.filter(obj => hoje <= new Date(obj.ano, obj.mes-1, obj.dia+1))
+									.sort((a, b) => parseFloat(a.id) - parseFloat(b.id));
+
+	let idade_selected ;
+	let data_vacina ;  
+	let dias ;
 
 	let meses_calculado = 0;
 	let dias_calculado = 0;
 
 	function handleSubmit() {
-
 		idade_selected = idades.find(obj => obj.id == selected);
 		data_vacina = new Date(idade_selected.ano, idade_selected.mes-1, idade_selected.dia);  
 		dias = parseInt((data_vacina-hoje)/(24*3600*1000));
@@ -67,7 +68,6 @@
 		meses_calculado = parseInt(dias/30);
 		dias_calculado = parseInt(dias%30);
 	}
-
 
 </script>
 
@@ -82,9 +82,9 @@
 			<h1>Vacinação no Estado de São Paulo</h1>
 			<div class="row mt-3">
 				<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
-				
 				<div class="col-sm-6">
-					<select bind:value={selected} on:change={handleSubmit} class="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
+					<select bind:value={selected} on:change={handleSubmit} id="colFormLabelLg" class="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
+						<option selected id="0" value="0" disabled>Sua idade</option>
 						{#each idades as idade}
 							<option id={idade.id} value={idade.id}>
 								{idade.idade}
@@ -93,32 +93,27 @@
 					</select>
 				</div>
 			</div>
-		
 		</div>
-		
 	</div>
-
 	
-	
-
-	<div class="alert alert-success mt-3" role="alert">
-		<p class="fs-3">Você será vacinado a partir do dia <strong>{idade_selected.dia< 10 ? '0'+idade_selected.dia: idade_selected.dia}/{idade_selected.mes < 10 ? '0'+idade_selected.mes: idade_selected.mes}/{idade_selected.ano}</strong>.</p>
-		<p class="mb-0 fs-5">Faltam <strong>{dias} dias</strong> 
-			{#if meses_calculado > 0} 
-				( <strong>{meses_calculado} meses
-				{#if dias_calculado > 0}
-				e {dias_calculado} dias
+	{#if selected>0} 
+		<div class="alert alert-success mt-3" role="alert">
+			<p class="fs-3">Você será vacinado a partir do dia <strong>{idade_selected.dia< 10 ? '0'+idade_selected.dia: idade_selected.dia}/{idade_selected.mes < 10 ? '0'+idade_selected.mes: idade_selected.mes}/{idade_selected.ano}</strong>.</p>
+			<p class="mb-0 fs-5">Faltam <strong>{dias} dias</strong> 
+				{#if meses_calculado > 0} 
+					( <strong>{meses_calculado} meses
+					{#if dias_calculado > 0}
+					e {dias_calculado} dias
+					{/if}
+					</strong>)
 				{/if}
-				</strong>)
-			{/if}
 			para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
-	</div>
+		</div>
+	{/if}
 
 	<hr />
 
-
 	<div class="flourish-embed" data-src="story/720615"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
 
 	<hr />
 
