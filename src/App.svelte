@@ -71,49 +71,59 @@
 
 </script>
 
-<svelte:head>
-	<title>Quando vou ser vacinado em São Paulo?</title>
-	
-</svelte:head>
+<div class="container-sm shadow p-5 mb-5 bg-body rounded">
 
-<h1>Vacinação no Estado de São Paulo</h1>
+	<div class="row pt-3 pb-3">
 
-<p>Quantos anos você tem?
-
-<select bind:value={selected} on:change={handleSubmit}>
-	{#each idades as idade}
-		<option id={idade.id} value={idade.id}>
-			{idade.idade}
-		</option>
-	{/each}
-</select>
-
-</p>
-
-<p>Você será vacinado a partir do dia <strong>{idade_selected.dia< 10 ? '0'+idade_selected.dia: idade_selected.dia}/{idade_selected.mes < 10 ? '0'+idade_selected.mes: idade_selected.mes}/{idade_selected.ano}</strong>.</p>
-<p>Faltam <strong>{dias}</strong> dias 
-	{#if meses_calculado > 0} 
-		( <strong>{meses_calculado} meses
-		{#if dias_calculado > 0}
-		e {dias_calculado} dias
-		{/if}
-		</strong>)
-	{/if}
+		<div class="col-sm-3">
+			<img src="./saopaulo.png" class="img-fluid" alt="">
+		</div>
+		<div class="col-sm-9">
+			<h1>Vacinação no Estado de São Paulo</h1>
+			<div class="row mt-3">
+				<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
+				
+				<div class="col-sm-6">
+					<select bind:value={selected} on:change={handleSubmit} class="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
+						{#each idades as idade}
+							<option id={idade.id} value={idade.id}>
+								{idade.idade}
+							</option>
+						{/each}
+					</select>
+				</div>
+			</div>
+		
+		</div>
+		
+	</div>
 
 	
-	para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
+	
+
+	<div class="alert alert-success mt-3" role="alert">
+		<p class="fs-3">Você será vacinado a partir do dia <strong>{idade_selected.dia< 10 ? '0'+idade_selected.dia: idade_selected.dia}/{idade_selected.mes < 10 ? '0'+idade_selected.mes: idade_selected.mes}/{idade_selected.ano}</strong>.</p>
+		<p class="mb-0 fs-5">Faltam <strong>{dias} dias</strong> 
+			{#if meses_calculado > 0} 
+				( <strong>{meses_calculado} meses
+				{#if dias_calculado > 0}
+				e {dias_calculado} dias
+				{/if}
+				</strong>)
+			{/if}
+			para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
+	</div>
+
+	<hr />
 
 
-<hr />
+	<div class="flourish-embed" data-src="story/720615"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 
-<div class="flourish-embed" data-src="story/720615"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+	<hr />
 
+	<p>Fonte: <a href="https://vacinaja.sp.gov.br/" target="_blank">https://vacinaja.sp.gov.br/</a></p> 
 
-<hr />
+	<hr />
 
-<p>Fonte: <a href="https://vacinaja.sp.gov.br/" target="_blank">https://vacinaja.sp.gov.br/</a></p> 
-
-<hr />
-
-
+</div>
