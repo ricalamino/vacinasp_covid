@@ -55,7 +55,7 @@
 
 	let idade_selected = idades.find(obj => obj.id == selected);
 	let	data_vacina = new Date(idade_selected.ano, idade_selected.mes-1, idade_selected.dia);  
-	let	dias = parseInt((data_vacina-hoje)/(24*3600*1000));
+	let	dias = Math.ceil((data_vacina-hoje)/(24*3600*1000));
 
 	let meses_calculado = 0;
 	let dias_calculado = 0;
@@ -63,10 +63,10 @@
 	function handleSubmit() {
 		idade_selected = idades.find(obj => obj.id == selected);
 		data_vacina = new Date(idade_selected.ano, idade_selected.mes-1, idade_selected.dia);  
-		dias = parseInt((data_vacina-hoje)/(24*3600*1000));
+		dias = Math.ceil((data_vacina-hoje)/(24*3600*1000));
 
 		meses_calculado = parseInt(dias/30);
-		dias_calculado = parseInt(dias%30);
+		dias_calculado = Math.ceil(dias%30);
 	}
 
 </script>
