@@ -149,10 +149,10 @@
 
 	<ul class="nav nav-tabs" id="myTab" role="tablist">
 		<li class="nav-item" role="presentation">
-			<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Estado de São Paulo</button>
+			<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><img src="./saopaulo.png" class="img-fluid" alt="" width="25px">&nbsp;&nbsp;Estado de São Paulo</button>
 		</li>
 		<li class="nav-item" role="presentation">
-			<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Município de São Paulo</button>
+			<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><img src="./municipio.png" class="img-fluid" alt="" width="25px">&nbsp;&nbsp;Município de São Paulo</button>
 		</li>
 	</ul>
 	<div class="tab-content" id="myTabContent">
@@ -193,6 +193,10 @@
 						</strong>)
 					{/if}
 				para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
+			</div>
+
+			<div class="alert alert-primary" role="alert">
+				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!</strong>
 			</div>
 			
 
@@ -237,6 +241,10 @@
 						</strong>)
 					{/if}
 				para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
+			</div>
+
+			<div class="alert alert-primary" role="alert">
+				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!</strong>
 			</div>
 		</div>
 	</div>
