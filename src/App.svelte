@@ -184,7 +184,7 @@
 			
 			<div class="alert alert-success mt-3" role="alert">
 				<p class="fs-3">Você será vacinado a partir do dia <strong>{idade_selected.dia< 10 ? '0'+idade_selected.dia: idade_selected.dia}/{idade_selected.mes < 10 ? '0'+idade_selected.mes: idade_selected.mes}/{idade_selected.ano}</strong>.</p>
-				<p class="mb-0 fs-5">Faltam <strong>{dias} dias</strong> 
+				<p class="mb-0 fs-5">Falta{dias > 1 ? 'm' : ''} <strong>{dias} dia{dias > 1 ? 's' : ''}</strong> 
 					{#if meses_calculado > 0} 
 						( <strong>{meses_calculado} meses
 						{#if dias_calculado > 0}
@@ -232,7 +232,7 @@
 			
 			<div class="alert alert-warning mt-3" role="alert">
 				<p class="fs-3">Você será vacinado a partir do dia <strong>{cidade_idade_selected.dia< 10 ? '0'+cidade_idade_selected.dia: cidade_idade_selected.dia}/{cidade_idade_selected.mes < 10 ? '0'+cidade_idade_selected.mes: cidade_idade_selected.mes}/{cidade_idade_selected.ano}</strong>.</p>
-				<p class="mb-0 fs-5">Faltam <strong>{cidade_dias} dias</strong> 
+				<p class="mb-0 fs-5">Falta{cidade_dias > 1 ? 'm' : ''} <strong>{cidade_dias} dia{cidade_dias > 1 ? 's' : ''}</strong> 
 					{#if cidade_meses_calculado > 0} 
 						( <strong>{cidade_meses_calculado} meses
 						{#if cidade_dias_calculado > 0}
