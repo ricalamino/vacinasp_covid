@@ -117,7 +117,7 @@
 
 	<hr />
 
-	<p>Fonte: <a href="https://vacinaja.sp.gov.br/" target="_blank">https://vacinaja.sp.gov.br/</a></p> 
+	<p>Fonte: <a href="https://vacinaja.sp.gov.br/" target="_blank">vacinaja.sp.gov.br</a></p> 
 
 	<hr />
 
