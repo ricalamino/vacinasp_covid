@@ -256,7 +256,8 @@
 
 
 	<p>Fonte: <a href="https://vacinaja.sp.gov.br/" target="_blank">vacinaja.sp.gov.br</a></p> 
+	<p><a href="https://github.com/ricalamino/vacinasp_covid" ><img src="./github.png" alt="Github" width="32px" /></a></p>
 
-	<hr />
+
 
 </div>
