@@ -95,7 +95,7 @@
 	const hoje = new Date();
 
 	const idades = idades_full
-									.filter(obj => hoje <= new Date(obj.ano, obj.mes-1, obj.dia+1))
+									.filter(obj => hoje < new Date(obj.ano, obj.mes-1, obj.dia+1))
 									.sort((a, b) => parseFloat(a.id) - parseFloat(b.id));
 
 	selected = idades[0].id;
@@ -111,7 +111,7 @@
 	let cidade_selected = 1;
 		
 	const cidade_idades = cidade_idades_full
-									.filter(obj => hoje <= new Date(obj.ano, obj.mes-1, obj.dia+1))
+									.filter(obj => hoje < new Date(obj.ano, obj.mes-1, obj.dia+1))
 									.sort((a, b) => parseFloat(a.id) - parseFloat(b.id));
 
 	cidade_selected = cidade_idades[0].id;
