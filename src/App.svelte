@@ -212,7 +212,7 @@
 					<img src="./municipio.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em 15/06/2021.</span>
+					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas datas fracionadas! Atualizado em 18/06/2021.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
