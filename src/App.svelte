@@ -57,9 +57,9 @@
 		{ id:9, idade: 51, ano: 2021, mes:6, dia:19},
 		{ id:10, idade: 50, ano: 2021, mes:6, dia:19},
 		{ id:11, idade: 49, ano: 2021, mes:6, dia:23},
-		{ id:12, idade: 48, ano: 2021, mes:6, dia:23},
-		{ id:13, idade: 47, ano: 2021, mes:6, dia:24},
-		{ id:14, idade: 46, ano: 2021, mes:6, dia:24},
+		{ id:12, idade: 48, ano: 2021, mes:6, dia:24},
+		{ id:13, idade: 47, ano: 2021, mes:6, dia:25},
+		{ id:14, idade: 46, ano: 2021, mes:6, dia:25},
 		{ id:15, idade: 45, ano: 2021, mes:6, dia:25},
 		{ id:16, idade: 44, ano: 2021, mes:6, dia:28},
 		{ id:17, idade: 43, ano: 2021, mes:6, dia:29},
@@ -212,7 +212,7 @@
 					<img src="./municipio.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas datas fracionadas! Atualizado em 18/06/2021.</span>
+					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas datas fracionadas! Atualizado em 21/06/2021.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
