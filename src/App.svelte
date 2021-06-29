@@ -61,8 +61,8 @@
 		{ id:13, idade: 47, ano: 2021, mes:6, dia:25},
 		{ id:14, idade: 46, ano: 2021, mes:6, dia:28},
 		{ id:15, idade: 45, ano: 2021, mes:6, dia:29},
-	/*	{ id:16, idade: 44, ano: 2021, mes:6, dia:29},
-		{ id:17, idade: 43, ano: 2021, mes:6, dia:29},
+		{ id:16, idade: 44, ano: 2021, mes:6, dia:29},
+		{ id:17, idade: 43, ano: 2021, mes:6, dia:30},
 		{ id:18, idade: 42, ano: 2021, mes:6, dia:30},
 		{ id:19, idade: 41, ano: 2021, mes:7, dia:5},
 		{ id:20, idade: 40, ano: 2021, mes:7, dia:8},
@@ -87,7 +87,7 @@
 		{ id:39, idade: 21, ano: 2021, mes:9, dia:6},
 		{ id:40, idade: 20, ano: 2021, mes:9, dia:9},
 		{ id:41, idade: 19, ano: 2021, mes:9, dia:13},
-		{ id:42, idade: 18, ano: 2021, mes:9, dia:13}	*/
+		{ id:42, idade: 18, ano: 2021, mes:9, dia:13}	
 	];
 
 	let selected = 1;
@@ -212,7 +212,7 @@
 					<img src="./municipio.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Atualizado em 28/06/2021.</span>
+					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas Datas! Atualizado em 28/06/2021 21:00.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
@@ -244,7 +244,7 @@
 			</div>
 
 			<div class="alert alert-danger" role="alert">
-				<strong>Se você tem 44 anos ou menos, as datas na cidade de São Paulo estão indefinidas!</strong>
+				<strong>Novas datas definidas em 28/06/2021 21:00!</strong>
 			</div>
 
 			<!--<div class="alert alert-primary" role="alert">
