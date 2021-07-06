@@ -244,7 +244,7 @@
 			</div>
 
 			<div class="alert alert-danger" role="alert">
-				<strong>Novas datas definidas em 06/07/2021 21:00!</strong>
+				<strong>Novas datas definidas em 06/07/2021!</strong>
 			</div>
 
 			<!--<div class="alert alert-primary" role="alert">
