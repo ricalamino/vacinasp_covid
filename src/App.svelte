@@ -65,8 +65,8 @@
 		{ id:17, idade: 43, ano: 2021, mes:6, dia:30},
 		{ id:18, idade: 42, ano: 2021, mes:6, dia:30},
 		{ id:19, idade: 41, ano: 2021, mes:7, dia:5},
-		{ id:20, idade: 40, ano: 2021, mes:7, dia:8},
-		{ id:21, idade: 39, ano: 2021, mes:7, dia:15},
+		{ id:20, idade: 40, ano: 2021, mes:7, dia:7},
+		{ id:21, idade: 39, ano: 2021, mes:7, dia:8},
 		{ id:22, idade: 38, ano: 2021, mes:7, dia:19},
 		{ id:23, idade: 37, ano: 2021, mes:7, dia:22},
 		{ id:24, idade: 36, ano: 2021, mes:7, dia:26},
@@ -212,7 +212,7 @@
 					<img src="./municipio.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas Datas! Atualizado em 28/06/2021 21:00.</span>
+					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas Datas! Atualizado em 06/07/2021 21:00.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
@@ -244,7 +244,7 @@
 			</div>
 
 			<div class="alert alert-danger" role="alert">
-				<strong>Novas datas definidas em 28/06/2021 21:00!</strong>
+				<strong>Novas datas definidas em 06/07/2021 21:00!</strong>
 			</div>
 
 			<!--<div class="alert alert-primary" role="alert">
