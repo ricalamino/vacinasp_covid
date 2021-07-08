@@ -21,9 +21,9 @@
 		{ id:18, idade: 42, ano: 2021, mes:6, dia:30},
 		{ id:19, idade: 41, ano: 2021, mes:6, dia:30},
 		{ id:20, idade: 40, ano: 2021, mes:6, dia:30},
-		{ id:21, idade: 39, ano: 2021, mes:7, dia:15},
-		{ id:22, idade: 38, ano: 2021, mes:7, dia:15},
-		{ id:23, idade: 37, ano: 2021, mes:7, dia:15},
+		{ id:21, idade: 39, ano: 2021, mes:7, dia:8},
+		{ id:22, idade: 38, ano: 2021, mes:7, dia:8},
+		{ id:23, idade: 37, ano: 2021, mes:7, dia:8},
 		{ id:24, idade: 36, ano: 2021, mes:7, dia:15},
 		{ id:25, idade: 35, ano: 2021, mes:7, dia:15},
 		{ id:26, idade: 34, ano: 2021, mes:7, dia:30},
@@ -164,7 +164,7 @@
 					<img src="./saopaulo.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Estado de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em 13/06/2021.</span>
+					<h1>Vacinação no Estado de São Paulo</h1><span class="badge bg-danger">Novas datas: 37 a 39 anos! Atualizado em 08/07/2021.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
