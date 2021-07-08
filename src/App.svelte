@@ -67,8 +67,8 @@
 		{ id:19, idade: 41, ano: 2021, mes:7, dia:5},
 		{ id:20, idade: 40, ano: 2021, mes:7, dia:7},
 		{ id:21, idade: 39, ano: 2021, mes:7, dia:8},
-		{ id:22, idade: 38, ano: 2021, mes:7, dia:19},
-		{ id:23, idade: 37, ano: 2021, mes:7, dia:22},
+		{ id:22, idade: 38, ano: 2021, mes:7, dia:12},
+		{ id:23, idade: 37, ano: 2021, mes:7, dia:13},
 		{ id:24, idade: 36, ano: 2021, mes:7, dia:26},
 		{ id:25, idade: 35, ano: 2021, mes:7, dia:28},
 		{ id:26, idade: 34, ano: 2021, mes:7, dia:30},
@@ -212,7 +212,7 @@
 					<img src="./municipio.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas Datas! Atualizado em 06/07/2021 21:00.</span>
+					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas datas para 37 e 38 anos! Atualizado em 07/07/2021.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
@@ -243,8 +243,8 @@
 				para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
 			</div>
 
-			<div class="alert alert-danger" role="alert">
-				<strong>Novas datas definidas em 06/07/2021!</strong>
+			<div class="alert alert-primary" role="alert">
+				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!</strong>
 			</div>
 
 			<!--<div class="alert alert-primary" role="alert">
