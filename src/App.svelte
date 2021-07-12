@@ -42,7 +42,13 @@
 		{ id:39, idade: 21, ano: 2021, mes:8, dia:13},
 		{ id:40, idade: 20, ano: 2021, mes:8, dia:13},
 		{ id:41, idade: 19, ano: 2021, mes:8, dia:13},
-		{ id:42, idade: 18, ano: 2021, mes:8, dia:13}	
+		{ id:42, idade: 18, ano: 2021, mes:8, dia:13},
+		{ id:43, idade: 17, ano: 2021, mes:9, dia:6},
+		{ id:44, idade: 16, ano: 2021, mes:9, dia:6},
+		{ id:45, idade: 15, ano: 2021, mes:9, dia:6},
+		{ id:46, idade: 14, ano: 2021, mes:9, dia:20},
+		{ id:47, idade: 13, ano: 2021, mes:9, dia:20},
+		{ id:48, idade: 12, ano: 2021, mes:9, dia:20}
 	];
 
 	const cidade_idades_full = [
@@ -87,7 +93,13 @@
 		{ id:39, idade: 21, ano: 2021, mes:8, dia:13},
 		{ id:40, idade: 20, ano: 2021, mes:8, dia:13},
 		{ id:41, idade: 19, ano: 2021, mes:8, dia:13},
-		{ id:42, idade: 18, ano: 2021, mes:8, dia:13}
+		{ id:42, idade: 18, ano: 2021, mes:8, dia:13},
+		{ id:43, idade: 17, ano: 2021, mes:9, dia:6},
+		{ id:44, idade: 16, ano: 2021, mes:9, dia:6},
+		{ id:45, idade: 15, ano: 2021, mes:9, dia:6},
+		{ id:46, idade: 14, ano: 2021, mes:9, dia:20},
+		{ id:47, idade: 13, ano: 2021, mes:9, dia:20},
+		{ id:48, idade: 12, ano: 2021, mes:9, dia:20}
 	];
 
 	let selected = 1;
