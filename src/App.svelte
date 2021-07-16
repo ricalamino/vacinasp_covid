@@ -78,10 +78,10 @@
 		{ id:24, idade: 36, ano: 2021, mes:7, dia:15},
 		{ id:25, idade: 35, ano: 2021, mes:7, dia:15},
 		{ id:26, idade: 34, ano: 2021, mes:7, dia:19},
-		{ id:27, idade: 33, ano: 2021, mes:7, dia:19},
-		{ id:28, idade: 32, ano: 2021, mes:7, dia:19},
-		{ id:29, idade: 31, ano: 2021, mes:7, dia:19},
-		{ id:30, idade: 30, ano: 2021, mes:7, dia:19},
+		{ id:27, idade: 33, ano: 2021, mes:7, dia:20},
+		{ id:28, idade: 32, ano: 2021, mes:7, dia:21},
+		{ id:29, idade: 31, ano: 2021, mes:7, dia:22},
+		{ id:30, idade: 30, ano: 2021, mes:7, dia:23},
 		{ id:31, idade: 29, ano: 2021, mes:8, dia:5},
 		{ id:32, idade: 28, ano: 2021, mes:8, dia:5},
 		{ id:33, idade: 27, ano: 2021, mes:8, dia:5},
@@ -102,6 +102,11 @@
 		{ id:48, idade: 12, ano: 2021, mes:9, dia:20}
 	];
 
+
+	// Datas da última atualização de cada calendário
+	const ultima_data_cidade = '16/07/2021';
+	const ultima_data_estado = '11/07/2021';
+	
 	let selected = 1;
 	
 	const hoje = new Date();
@@ -176,7 +181,7 @@
 					<img src="./saopaulo.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Estado de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em 11/07/2021.</span>
+					<h1>Vacinação no Estado de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em {ultima_data_estado}.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
@@ -224,7 +229,7 @@
 					<img src="./municipio.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em 11/07/2021.</span>
+					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em {ultima_data_cidade}.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
