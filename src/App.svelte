@@ -108,7 +108,6 @@
 	const ultima_data_estado = '11/07/2021';
 	
 	let selected = 1;
-	//Teste git 
 	
 	const hoje = new Date();
 
