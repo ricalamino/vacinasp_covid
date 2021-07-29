@@ -31,24 +31,24 @@
 		{ id:28, idade: 32, ano: 2021, mes:7, dia:19},
 		{ id:29, idade: 31, ano: 2021, mes:7, dia:19},
 		{ id:30, idade: 30, ano: 2021, mes:7, dia:19},
-		{ id:31, idade: 29, ano: 2021, mes:8, dia:5},
-		{ id:32, idade: 28, ano: 2021, mes:8, dia:5},
+		{ id:31, idade: 29, ano: 2021, mes:7, dia:30},
+		{ id:32, idade: 28, ano: 2021, mes:7, dia:30},
 		{ id:33, idade: 27, ano: 2021, mes:8, dia:5},
 		{ id:34, idade: 26, ano: 2021, mes:8, dia:5},
 		{ id:35, idade: 25, ano: 2021, mes:8, dia:5},
-		{ id:36, idade: 24, ano: 2021, mes:8, dia:13},
-		{ id:37, idade: 23, ano: 2021, mes:8, dia:13},
-		{ id:38, idade: 22, ano: 2021, mes:8, dia:13},
-		{ id:39, idade: 21, ano: 2021, mes:8, dia:13},
-		{ id:40, idade: 20, ano: 2021, mes:8, dia:13},
-		{ id:41, idade: 19, ano: 2021, mes:8, dia:13},
-		{ id:42, idade: 18, ano: 2021, mes:8, dia:13},
-		{ id:43, idade: 17, ano: 2021, mes:9, dia:6},
-		{ id:44, idade: 16, ano: 2021, mes:9, dia:6},
-		{ id:45, idade: 15, ano: 2021, mes:9, dia:6},
-		{ id:46, idade: 14, ano: 2021, mes:9, dia:20},
-		{ id:47, idade: 13, ano: 2021, mes:9, dia:20},
-		{ id:48, idade: 12, ano: 2021, mes:9, dia:20}
+		{ id:36, idade: 24, ano: 2021, mes:8, dia:10},
+		{ id:37, idade: 23, ano: 2021, mes:8, dia:10},
+		{ id:38, idade: 22, ano: 2021, mes:8, dia:10},
+		{ id:39, idade: 21, ano: 2021, mes:8, dia:10},
+		{ id:40, idade: 20, ano: 2021, mes:8, dia:10},
+		{ id:41, idade: 19, ano: 2021, mes:8, dia:10},
+		{ id:42, idade: 18, ano: 2021, mes:8, dia:10},
+		{ id:43, idade: 17, ano: 2021, mes:8, dia:30},
+		{ id:44, idade: 16, ano: 2021, mes:8, dia:30},
+		{ id:45, idade: 15, ano: 2021, mes:8, dia:30},
+		{ id:46, idade: 14, ano: 2021, mes:9, dia:6},
+		{ id:47, idade: 13, ano: 2021, mes:9, dia:6},
+		{ id:48, idade: 12, ano: 2021, mes:9, dia:6}
 	];
 
 	const cidade_idades_full = [
@@ -83,29 +83,29 @@
 		{ id:29, idade: 31, ano: 2021, mes:7, dia:22},
 		{ id:30, idade: 30, ano: 2021, mes:7, dia:23},
 		{ id:31, idade: 29, ano: 2021, mes:7, dia:27},
-		{ id:32, idade: 28, ano: 2021, mes:7, dia:29},
+		{ id:32, idade: 28, ano: 2021, mes:7, dia:30},
 		{ id:33, idade: 27, ano: 2021, mes:8, dia:5},
 		{ id:34, idade: 26, ano: 2021, mes:8, dia:5},
 		{ id:35, idade: 25, ano: 2021, mes:8, dia:5},
-		{ id:36, idade: 24, ano: 2021, mes:8, dia:13},
-		{ id:37, idade: 23, ano: 2021, mes:8, dia:13},
-		{ id:38, idade: 22, ano: 2021, mes:8, dia:13},
-		{ id:39, idade: 21, ano: 2021, mes:8, dia:13},
-		{ id:40, idade: 20, ano: 2021, mes:8, dia:13},
-		{ id:41, idade: 19, ano: 2021, mes:8, dia:13},
-		{ id:42, idade: 18, ano: 2021, mes:8, dia:13},
-		{ id:43, idade: 17, ano: 2021, mes:9, dia:6},
-		{ id:44, idade: 16, ano: 2021, mes:9, dia:6},
-		{ id:45, idade: 15, ano: 2021, mes:9, dia:6},
-		{ id:46, idade: 14, ano: 2021, mes:9, dia:20},
-		{ id:47, idade: 13, ano: 2021, mes:9, dia:20},
-		{ id:48, idade: 12, ano: 2021, mes:9, dia:20}
+		{ id:36, idade: 24, ano: 2021, mes:8, dia:10},
+		{ id:37, idade: 23, ano: 2021, mes:8, dia:10},
+		{ id:38, idade: 22, ano: 2021, mes:8, dia:10},
+		{ id:39, idade: 21, ano: 2021, mes:8, dia:10},
+		{ id:40, idade: 20, ano: 2021, mes:8, dia:10},
+		{ id:41, idade: 19, ano: 2021, mes:8, dia:10},
+		{ id:42, idade: 18, ano: 2021, mes:8, dia:10},
+		{ id:43, idade: 17, ano: 2021, mes:8, dia:30},
+		{ id:44, idade: 16, ano: 2021, mes:8, dia:30},
+		{ id:45, idade: 15, ano: 2021, mes:8, dia:30},
+		{ id:46, idade: 14, ano: 2021, mes:9, dia:6},
+		{ id:47, idade: 13, ano: 2021, mes:9, dia:6},
+		{ id:48, idade: 12, ano: 2021, mes:9, dia:6}
 	];
 
 
 	// Datas da última atualização de cada calendário
-	const ultima_data_cidade = '22/07/2021';
-	const ultima_data_estado = '11/07/2021';
+	const ultima_data_cidade = '29/07/2021';
+	const ultima_data_estado = '29/07/2021';
 	
 	let selected = 1;
 	
