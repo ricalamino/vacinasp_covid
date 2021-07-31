@@ -84,7 +84,7 @@
 		{ id:30, idade: 30, ano: 2021, mes:7, dia:23},
 		{ id:31, idade: 29, ano: 2021, mes:7, dia:27},
 		{ id:32, idade: 28, ano: 2021, mes:7, dia:30},
-		{ id:33, idade: 27, ano: 2021, mes:8, dia:5},
+		{ id:33, idade: 27, ano: 2021, mes:8, dia:4},
 		{ id:34, idade: 26, ano: 2021, mes:8, dia:5},
 		{ id:35, idade: 25, ano: 2021, mes:8, dia:5},
 		{ id:36, idade: 24, ano: 2021, mes:8, dia:10},
@@ -104,7 +104,7 @@
 
 
 	// Datas da última atualização de cada calendário
-	const ultima_data_cidade = '29/07/2021';
+	const ultima_data_cidade = '30/07/2021';
 	const ultima_data_estado = '29/07/2021';
 	
 	let selected = 1;
