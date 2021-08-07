@@ -257,7 +257,7 @@
 						{/if}
 						</strong>)
 					{/if}
-				para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
+				para você tomar a primeira dose segundo o calendário oficial do Município de São Paulo!</p>
 			</div>
 
 			<div class="alert alert-primary" role="alert">
