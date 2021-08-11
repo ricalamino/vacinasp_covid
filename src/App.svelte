@@ -91,9 +91,9 @@
 		{ id:37, idade: 23, ano: 2021, mes:8, dia:12},
 		{ id:38, idade: 22, ano: 2021, mes:8, dia:13},
 		{ id:39, idade: 21, ano: 2021, mes:8, dia:14},
-		{ id:40, idade: 20, ano: 2021, mes:8, dia:20},
-		{ id:41, idade: 19, ano: 2021, mes:8, dia:20},
-		{ id:42, idade: 18, ano: 2021, mes:8, dia:20},
+		{ id:40, idade: 20, ano: 2021, mes:8, dia:14},
+		{ id:41, idade: 19, ano: 2021, mes:8, dia:14},
+		{ id:42, idade: 18, ano: 2021, mes:8, dia:14},
 		{ id:43, idade: 17, ano: 2021, mes:8, dia:30},
 		{ id:44, idade: 16, ano: 2021, mes:8, dia:30},
 		{ id:45, idade: 15, ano: 2021, mes:8, dia:30},
@@ -104,7 +104,7 @@
 
 
 	// Datas da última atualização de cada calendário
-	const ultima_data_cidade = '06/08/2021';
+	const ultima_data_cidade = '11/08/2021';
 	const ultima_data_estado = '29/07/2021';
 	
 	let selected = 1;
