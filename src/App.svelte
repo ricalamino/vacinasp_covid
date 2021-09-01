@@ -186,7 +186,7 @@
 			</div>
 
 			<div class="alert alert-primary" role="alert">
-				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!<br />Datas da terceira dose incluídas!</strong>
+				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!<br />Datas da terceira dose incluídas para 60 anos ou mais!</strong>
 			</div>
 			
 
@@ -234,7 +234,7 @@
 			</div>
 
 			<div class="alert alert-primary" role="alert">
-				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!</strong>
+				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!<br />Datas da terceira dose incluídas para 60 anos ou mais!</strong>
 			</div>
 
 			<!--<div class="alert alert-primary" role="alert">
