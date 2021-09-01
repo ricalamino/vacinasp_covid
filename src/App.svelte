@@ -1,102 +1,75 @@
 <script>
 
 	const idades_full = [
-		{ id:1, idade: 59, ano: 2021, mes:6, dia:16},
-		{ id:2, idade: 58, ano: 2021, mes:6, dia:16},
-		{ id:3, idade: 57, ano: 2021, mes:6, dia:16},
-		{ id:4, idade: 56, ano: 2021, mes:6, dia:16},
-		{ id:5, idade: 55, ano: 2021, mes:6, dia:16},
-		{ id:6, idade: 54, ano: 2021, mes:6, dia:16},
-		{ id:7, idade: 53, ano: 2021, mes:6, dia:16},
-		{ id:8, idade: 52, ano: 2021, mes:6, dia:16},
-		{ id:9, idade: 51, ano: 2021, mes:6, dia:16},
-		{ id:10, idade: 50, ano: 2021, mes:6, dia:16},
-		{ id:11, idade: 49, ano: 2021, mes:6, dia:23},
-		{ id:12, idade: 48, ano: 2021, mes:6, dia:23},
-		{ id:13, idade: 47, ano: 2021, mes:6, dia:23},
-		{ id:14, idade: 46, ano: 2021, mes:6, dia:23},
-		{ id:15, idade: 45, ano: 2021, mes:6, dia:23},
-		{ id:16, idade: 44, ano: 2021, mes:6, dia:23},
-		{ id:17, idade: 43, ano: 2021, mes:6, dia:23},
-		{ id:18, idade: 42, ano: 2021, mes:6, dia:30},
-		{ id:19, idade: 41, ano: 2021, mes:6, dia:30},
-		{ id:20, idade: 40, ano: 2021, mes:6, dia:30},
-		{ id:21, idade: 39, ano: 2021, mes:7, dia:8},
-		{ id:22, idade: 38, ano: 2021, mes:7, dia:8},
-		{ id:23, idade: 37, ano: 2021, mes:7, dia:8},
-		{ id:24, idade: 36, ano: 2021, mes:7, dia:15},
-		{ id:25, idade: 35, ano: 2021, mes:7, dia:15},
-		{ id:26, idade: 34, ano: 2021, mes:7, dia:19},
-		{ id:27, idade: 33, ano: 2021, mes:7, dia:19},
-		{ id:28, idade: 32, ano: 2021, mes:7, dia:19},
-		{ id:29, idade: 31, ano: 2021, mes:7, dia:19},
-		{ id:30, idade: 30, ano: 2021, mes:7, dia:19},
-		{ id:31, idade: 29, ano: 2021, mes:7, dia:30},
-		{ id:32, idade: 28, ano: 2021, mes:7, dia:30},
-		{ id:33, idade: 27, ano: 2021, mes:8, dia:5},
-		{ id:34, idade: 26, ano: 2021, mes:8, dia:5},
-		{ id:35, idade: 25, ano: 2021, mes:8, dia:5},
-		{ id:36, idade: 24, ano: 2021, mes:8, dia:10},
-		{ id:37, idade: 23, ano: 2021, mes:8, dia:10},
-		{ id:38, idade: 22, ano: 2021, mes:8, dia:10},
-		{ id:39, idade: 21, ano: 2021, mes:8, dia:10},
-		{ id:40, idade: 20, ano: 2021, mes:8, dia:10},
-		{ id:41, idade: 19, ano: 2021, mes:8, dia:10},
-		{ id:42, idade: 18, ano: 2021, mes:8, dia:10},
-		{ id:43, idade: 17, ano: 2021, mes:8, dia:30},
-		{ id:44, idade: 16, ano: 2021, mes:8, dia:30},
-		{ id:45, idade: 15, ano: 2021, mes:8, dia:30},
+		{ id:1, idade: 90, ano: 2021, mes:9, dia:6},
+		{ id:2, idade: 89, ano: 2021, mes:9, dia:13},
+		{ id:3, idade: 88, ano: 2021, mes:9, dia:13},
+		{ id:4, idade: 87, ano: 2021, mes:9, dia:13},
+		{ id:5, idade: 86, ano: 2021, mes:9, dia:13},
+		{ id:6, idade: 85, ano: 2021, mes:9, dia:13},
+		{ id:7, idade: 84, ano: 2021, mes:9, dia:20},
+		{ id:8, idade: 83, ano: 2021, mes:9, dia:20},
+		{ id:9, idade: 82, ano: 2021, mes:9, dia:20},
+		{ id:10, idade: 81, ano: 2021, mes:9, dia:20},
+		{ id:11, idade: 80, ano: 2021, mes:9, dia:20},
+		{ id:12, idade: 79, ano: 2021, mes:9, dia:27},
+		{ id:13, idade: 78, ano: 2021, mes:9, dia:27},
+		{ id:14, idade: 77, ano: 2021, mes:9, dia:27},
+		{ id:15, idade: 76, ano: 2021, mes:9, dia:27},
+		{ id:16, idade: 75, ano: 2021, mes:9, dia:27},
+		{ id:17, idade: 74, ano: 2021, mes:9, dia:27},
+		{ id:18, idade: 73, ano: 2021, mes:9, dia:27},
+		{ id:19, idade: 72, ano: 2021, mes:9, dia:27},
+		{ id:20, idade: 71, ano: 2021, mes:9, dia:27},
+		{ id:21, idade: 70, ano: 2021, mes:9, dia:27},
+		{ id:22, idade: 69, ano: 2021, mes:10, dia:4},
+		{ id:23, idade: 68, ano: 2021, mes:10, dia:4},
+		{ id:24, idade: 67, ano: 2021, mes:10, dia:4},
+		{ id:25, idade: 66, ano: 2021, mes:10, dia:4},
+		{ id:26, idade: 65, ano: 2021, mes:10, dia:4},
+		{ id:27, idade: 64, ano: 2021, mes:10, dia:4},
+		{ id:28, idade: 63, ano: 2021, mes:10, dia:4},
+		{ id:29, idade: 62, ano: 2021, mes:10, dia:4},
+		{ id:30, idade: 61, ano: 2021, mes:10, dia:4},
+		{ id:31, idade: 60, ano: 2021, mes:10, dia:4},
+
 		{ id:46, idade: 14, ano: 2021, mes:9, dia:6},
 		{ id:47, idade: 13, ano: 2021, mes:9, dia:6},
 		{ id:48, idade: 12, ano: 2021, mes:9, dia:6}
 	];
 
 	const cidade_idades_full = [
-		{ id:1, idade: 59, ano: 2021, mes:6, dia:14},
-		{ id:2, idade: 58, ano: 2021, mes:6, dia:14},
-		{ id:3, idade: 57, ano: 2021, mes:6, dia:16},
-		{ id:4, idade: 56, ano: 2021, mes:6, dia:16},
-		{ id:5, idade: 55, ano: 2021, mes:6, dia:17},
-		{ id:6, idade: 54, ano: 2021, mes:6, dia:17},
-		{ id:7, idade: 53, ano: 2021, mes:6, dia:18},
-		{ id:8, idade: 52, ano: 2021, mes:6, dia:18},
-		{ id:9, idade: 51, ano: 2021, mes:6, dia:19},
-		{ id:10, idade: 50, ano: 2021, mes:6, dia:19},
-		{ id:11, idade: 49, ano: 2021, mes:6, dia:23},
-		{ id:12, idade: 48, ano: 2021, mes:6, dia:24},
-		{ id:13, idade: 47, ano: 2021, mes:6, dia:25},
-		{ id:14, idade: 46, ano: 2021, mes:6, dia:28},
-		{ id:15, idade: 45, ano: 2021, mes:6, dia:29},
-		{ id:16, idade: 44, ano: 2021, mes:6, dia:29},
-		{ id:17, idade: 43, ano: 2021, mes:6, dia:30},
-		{ id:18, idade: 42, ano: 2021, mes:6, dia:30},
-		{ id:19, idade: 41, ano: 2021, mes:7, dia:5},
-		{ id:20, idade: 40, ano: 2021, mes:7, dia:7},
-		{ id:21, idade: 39, ano: 2021, mes:7, dia:8},
-		{ id:22, idade: 38, ano: 2021, mes:7, dia:9},
-		{ id:23, idade: 37, ano: 2021, mes:7, dia:12},
-		{ id:24, idade: 36, ano: 2021, mes:7, dia:15},
-		{ id:25, idade: 35, ano: 2021, mes:7, dia:15},
-		{ id:26, idade: 34, ano: 2021, mes:7, dia:19},
-		{ id:27, idade: 33, ano: 2021, mes:7, dia:20},
-		{ id:28, idade: 32, ano: 2021, mes:7, dia:21},
-		{ id:29, idade: 31, ano: 2021, mes:7, dia:22},
-		{ id:30, idade: 30, ano: 2021, mes:7, dia:23},
-		{ id:31, idade: 29, ano: 2021, mes:7, dia:27},
-		{ id:32, idade: 28, ano: 2021, mes:8, dia:2},
-		{ id:33, idade: 27, ano: 2021, mes:8, dia:4},
-		{ id:34, idade: 26, ano: 2021, mes:8, dia:5},
-		{ id:35, idade: 25, ano: 2021, mes:8, dia:6},
-		{ id:36, idade: 24, ano: 2021, mes:8, dia:11},
-		{ id:37, idade: 23, ano: 2021, mes:8, dia:12},
-		{ id:38, idade: 22, ano: 2021, mes:8, dia:13},
-		{ id:39, idade: 21, ano: 2021, mes:8, dia:14},
-		{ id:40, idade: 20, ano: 2021, mes:8, dia:14},
-		{ id:41, idade: 19, ano: 2021, mes:8, dia:14},
-		{ id:42, idade: 18, ano: 2021, mes:8, dia:14},
-		{ id:43, idade: 17, ano: 2021, mes:8, dia:30},
-		{ id:44, idade: 16, ano: 2021, mes:8, dia:30},
-		{ id:45, idade: 15, ano: 2021, mes:8, dia:30},
+		{ id:1, idade: 90, ano: 2021, mes:9, dia:6},
+		{ id:2, idade: 89, ano: 2021, mes:9, dia:13},
+		{ id:3, idade: 88, ano: 2021, mes:9, dia:13},
+		{ id:4, idade: 87, ano: 2021, mes:9, dia:13},
+		{ id:5, idade: 86, ano: 2021, mes:9, dia:13},
+		{ id:6, idade: 85, ano: 2021, mes:9, dia:13},
+		{ id:7, idade: 84, ano: 2021, mes:9, dia:20},
+		{ id:8, idade: 83, ano: 2021, mes:9, dia:20},
+		{ id:9, idade: 82, ano: 2021, mes:9, dia:20},
+		{ id:10, idade: 81, ano: 2021, mes:9, dia:20},
+		{ id:11, idade: 80, ano: 2021, mes:9, dia:20},
+		{ id:12, idade: 79, ano: 2021, mes:9, dia:27},
+		{ id:13, idade: 78, ano: 2021, mes:9, dia:27},
+		{ id:14, idade: 77, ano: 2021, mes:9, dia:27},
+		{ id:15, idade: 76, ano: 2021, mes:9, dia:27},
+		{ id:16, idade: 75, ano: 2021, mes:9, dia:27},
+		{ id:17, idade: 74, ano: 2021, mes:9, dia:27},
+		{ id:18, idade: 73, ano: 2021, mes:9, dia:27},
+		{ id:19, idade: 72, ano: 2021, mes:9, dia:27},
+		{ id:20, idade: 71, ano: 2021, mes:9, dia:27},
+		{ id:21, idade: 70, ano: 2021, mes:9, dia:27},
+		{ id:22, idade: 69, ano: 2021, mes:10, dia:4},
+		{ id:23, idade: 68, ano: 2021, mes:10, dia:4},
+		{ id:24, idade: 67, ano: 2021, mes:10, dia:4},
+		{ id:25, idade: 66, ano: 2021, mes:10, dia:4},
+		{ id:26, idade: 65, ano: 2021, mes:10, dia:4},
+		{ id:27, idade: 64, ano: 2021, mes:10, dia:4},
+		{ id:28, idade: 63, ano: 2021, mes:10, dia:4},
+		{ id:29, idade: 62, ano: 2021, mes:10, dia:4},
+		{ id:30, idade: 61, ano: 2021, mes:10, dia:4},
+		{ id:31, idade: 60, ano: 2021, mes:10, dia:4},
 		{ id:46, idade: 14, ano: 2021, mes:9, dia:6},
 		{ id:47, idade: 13, ano: 2021, mes:9, dia:6},
 		{ id:48, idade: 12, ano: 2021, mes:9, dia:6}
@@ -104,8 +77,8 @@
 
 
 	// Datas da última atualização de cada calendário
-	const ultima_data_cidade = '11/08/2021';
-	const ultima_data_estado = '29/07/2021';
+	const ultima_data_cidade = '01/09/2021';
+	const ultima_data_estado = '01/09/2021';
 	
 	let selected = 1;
 	
@@ -181,7 +154,7 @@
 					<img src="./saopaulo.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Estado de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em {ultima_data_estado}.</span>
+					<h1>Vacinação COVID-19 no Estado de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em {ultima_data_estado}.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
@@ -189,7 +162,7 @@
 								<option selected id="0" value="0" disabled>Sua idade</option>
 								{#each idades as idade}
 									<option id={idade.id} value={idade.id}>
-										{idade.idade}
+										{#if idade.idade == 90 } 90+ {:else} {idade.idade} {/if}
 									</option>
 								{/each}
 							</select>
@@ -209,11 +182,11 @@
 						{/if}
 						</strong>)
 					{/if}
-				para você tomar a primeira dose segundo o calendário oficial do Governo de São Paulo!</p>
+				para você tomar a <strong>{#if idade_selected.idade >= 60}terceira {:else}primeira {/if}</strong> dose segundo o calendário oficial do Governo de São Paulo!</p>
 			</div>
 
 			<div class="alert alert-primary" role="alert">
-				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!</strong>
+				<strong>Atenção: Se você não encontrou sua idade, a vacinação da sua faixa etária já deve ter iniciado!<br />Datas da terceira dose incluídas!</strong>
 			</div>
 			
 
@@ -229,7 +202,7 @@
 					<img src="./municipio.png" class="img-fluid" alt="">
 				</div>
 				<div class="col-sm-9">
-					<h1>Vacinação no Município de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em {ultima_data_cidade}.</span>
+					<h1>Vacinação COVID-19 no Município de São Paulo</h1><span class="badge bg-danger">Novas datas! Atualizado em {ultima_data_cidade}.</span>
 					<div class="row mt-3">
 						<label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-lg">Quantos anos você tem?</label>
 						<div class="col-sm-6">
@@ -237,7 +210,7 @@
 								<option selected id="0" value="0" disabled>Sua idade</option>
 								{#each cidade_idades as cidade_idade}
 									<option id={cidade_idade.id} value={cidade_idade.id}>
-										{cidade_idade.idade}
+										{#if cidade_idade.idade == 90 } 90+ {:else} {cidade_idade.idade} {/if}
 									</option>
 								{/each}
 							</select>
@@ -257,7 +230,7 @@
 						{/if}
 						</strong>)
 					{/if}
-				para você tomar a primeira dose segundo o calendário oficial do Município de São Paulo!</p>
+				para você tomar a <strong>{#if cidade_idade_selected.idade >= 60}terceira {:else}primeira {/if}</strong> dose segundo o calendário oficial do Município de São Paulo!</p>
 			</div>
 
 			<div class="alert alert-primary" role="alert">
