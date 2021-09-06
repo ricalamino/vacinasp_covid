@@ -160,13 +160,15 @@
 						<div class="col-sm-6">
 							<select bind:value={selected} on:change={handleSubmit} on:blur={handleSubmit} id="colFormLabelLg" class="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
 								<option selected id="0" value="0" disabled>Sua idade</option>
-								{#each idades as idade}
-									{#if idade.idade == 90 } <optgroup label="Terceira Dose"></optgroup> {/if}
-									{#if idade.idade == 14 } <optgroup label="Primeira Dose"></optgroup> {/if}
-									<option id={idade.id} value={idade.id}>
-										{#if idade.idade == 90 } 90+ {:else} {idade.idade} {/if}
-									</option>
-								{/each}
+									<optgroup label="Terceira Dose">
+									{#each idades as idade}
+									
+										
+										<option id={idade.id} value={idade.id}>
+											{#if idade.idade == 90 } 90+ {:else} {idade.idade} {/if}
+										</option>
+									{/each}
+								</optgroup> 
 							</select>
 						</div>
 					</div>
@@ -210,14 +212,14 @@
 						<div class="col-sm-6">
 							<select bind:value={cidade_selected} on:change={handleSubmitCidade} on:blur={handleSubmitCidade} id="colFormLabelLg" class="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
 								<option selected id="0" value="0" disabled>Sua idade</option>
-								{#each cidade_idades as cidade_idade}
-									{#if cidade_idade.idade == 90 } <optgroup label="Terceira Dose"></optgroup> {/if}
-									{#if cidade_idade.idade == 14 } <optgroup label="Primeira Dose"></optgroup> {/if}
-									<option id={cidade_idade.id} value={cidade_idade.id}>
-										{#if cidade_idade.idade == 90 } 90+ {:else} {cidade_idade.idade} {/if}
-									</option>
-									
-								{/each}
+								<optgroup label="Terceira Dose">
+									{#each cidade_idades as cidade_idade}
+										<option id={cidade_idade.id} value={cidade_idade.id}>
+											{#if cidade_idade.idade == 90 } 90+ {:else} {cidade_idade.idade} {/if}
+										</option>
+										
+									{/each}
+								</optgroup>
 							</select>
 						</div>
 					</div>
